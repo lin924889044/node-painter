@@ -23,7 +23,7 @@ api.get("/draw/:num", function(req, res) {
         ctx.beginPath()
         ctx.lineTo(50, 102)
         ctx.lineTo(50 + text.width, 102)
-        ctx.stroke()i
+        ctx.stroke()
         let test = '<img src="' + canvas.toDataURL() + '" />'
         res.send(test);
       })
