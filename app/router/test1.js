@@ -17,7 +17,7 @@ api.get("/draw/:num", function(req, res) {
       loadImage(cover).then((image) => {
         ctx.drawImage(image, 0, 0, 200, 200)
         ctx.font = '30px Impact'
-        ctx.fillText('啊啊啊!', 50, 100)
+        ctx.fillText('Awesome!', 50, 100)
         var text = ctx.measureText('Awesome!')
         ctx.strokeStyle = 'rgba(0,0,0,0.5)'
         ctx.beginPath()
