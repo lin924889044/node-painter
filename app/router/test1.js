@@ -16,7 +16,7 @@ api.get("/draw/:num", function(req, res) {
       const cover = _.get(parsedData, 'body.missionRecord.product.productTemplate.coverImgLow')
       loadImage(cover).then((image) => {
         ctx.drawImage(image, 0, 0, 400, 400)
-        ctx.font = 'Luxi Serif'
+        ctx.font = '30px WenQuanYi Zen Hei Mono'
         ctx.fillStyle = "Red";
         ctx.fillText('Group Lottery', 50, 100)
         var text = ctx.measureText('Awesome!')
